@@ -1,0 +1,347 @@
+/* Note: Bootstrap can be used for base-style */
+/* Styles Used Application-wide */
+body {
+    background-color: rgba(67, 54, 72, 1);
+    color: rgba(217, 214, 218, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(255, 112, 0, 1);
+}
+
+/* Header and Navigation Styles */
+.navbar-brand, .navbar-brand img {
+  width: 80px;
+}
+.navbar-toggler {
+    border-color: rgba(217, 214, 218, 1);
+}
+nav div.container-fluid {
+  margin: auto;
+}
+.chevron { 
+  list-style: none; 
+  overflow: hidden;
+  font: 14px Sans-Serif; 
+}
+.chevron li { 
+  float: left;
+  margin-right: 30px;
+  width: 100px;
+}
+.chevron li a {
+  color: rgba(67, 54, 72, 1) !important;
+  text-decoration: none; 
+  padding: 10px 0 10px 50px !important;
+  background: rgba(217, 214, 218, 1); 
+  position: relative; 
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: centre;
+}
+.chevron li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid rgba(217, 214, 218, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.chevron li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid rgba(67, 54, 72, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: -100%;
+  left: 100%;
+  z-index: 1; 
+}
+div#search {
+  overflow: hidden;
+  background-color:  rgba(67, 54, 72, 1);
+  width: 80%;
+  position: relative;
+}
+input[type="search"] {
+  padding-left: 35px;
+  background-color: rgba(217, 214, 218, 1);
+  border-color: rgba(217, 214, 218, 1);
+  border-style: none;
+  width: 80%
+}
+div#search::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid rgba(67, 54, 72, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  z-index: 1; 
+}
+
+div#search::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid rgba(217, 214, 218, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 80%;
+  z-index: 100; 
+}
+.btn {
+  padding: 0;
+}
+#searchBtn {
+  padding: 0;
+  width: 25px;
+}
+
+.chevron li.nav-item a.active {
+  color: rgba(255, 112, 0, 1) !important;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(105, 94, 109, 1);
+    color: rgba(217, 215, 218, 1);
+}
+
+#footer-content {
+    padding: 25px;
+}
+
+.footer-link a {
+    color: rgba(217, 215, 218, 1);
+    text-decoration: none;
+}
+
+.fa-icon {
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#copyright {
+    font-size: 0.75rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-image {
+     max-height: 120px;
+     max-width: 150px;
+     display: block;
+     margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .customFooter {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Styles for the Now Showing Movie Cards */
+.now-showing-card {
+    margin-top: 50px;
+}
+
+.now-showing-card h4 {
+    color: rgba(217, 214, 218, 1);
+    padding-top: 20px;
+}
+
+/* Styles for the Whats On Cards */
+h4 > img {
+    max-height: 1em;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+img.poster, h4.whatsOnTitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+div.whatsOnCard h4{
+    color: rgba(217, 214, 218, 1);
+    padding-top: 0px;
+}
+
+/* Styles use on the home page */
+p.left, p.right {
+    margin: 0;
+}
+
+p.left {
+    padding: 20px 20px 20px 0px; 
+}
+
+p.right {
+    padding: 20px 0px 20px 40px; 
+}
+
+p.top, p.middle, img.top, img.middle {
+    border-bottom: 5px solid rgba(217, 214, 218, 1);
+}
+
+p.bottom, p.middle, img.bottom, img.middle {
+    border-top: 5px solid rgba(217, 214, 218, 1);
+}
+
+div.left {
+    border-right: 5px solid rgba(217, 214, 218, 1);
+    padding-right: 0;
+}
+
+div.right {
+    border-left: 5px solid rgba(217, 214, 218, 1);
+    padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    div.left, div.right {
+        border-left: none;
+        border-right: none;
+        padding: inherit;
+    }
+
+    p.left, p.right {
+        margin: 0;
+        padding: 20px 20px;
+    }
+
+    .top, .middle, .bottom {
+        border-top: 5px solid rgba(217, 214, 218, 1);
+        border-bottom: 5px solid rgba(217, 214, 218, 1);
+    }
+
+    div.left :first-child {
+        border-top: none;
+    }
+    
+    div.right :last-child {
+        border-bottom: none;
+    }
+}
+
+/* Styles used for showing Movie Details */
+div.detailsTitle {
+    text-align: center;
+}
+
+/* Styles used on the Sign Up form */
+form#signUpForm input, form#signUpForm select, form#logInForm input {
+    /* width: 100%; */
+    background-color: rgba(217, 214, 218, 1);
+    padding-left: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    div#signUpText, div#logInText {
+        display: none;
+    }
+
+    div#signUpContent, div#logInContent {
+        margin: 0% !important;
+    }
+
+    .stacked-control {
+        margin-top: 10px;
+    }
+
+}
+
+form#signUpForm input#btn-sign-up, form#logInForm input#btn-log-in {
+    background-color: rgba(67, 54, 72, 1);
+    color: rgba(255, 112, 0, 1);
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color:rgba(217, 214, 218, 1);
+  border-color: rgba(105, 94, 109, 1);
+}
+
+.custom-control-input:checked~.custom-control-label.ccc::before {
+  background-color:rgba(67, 54, 72, 1)
+}
+
+/* Styles used on the log in form */
+a#signUpLink {
+    color: rgba(255, 112, 0, 1);
+}
+
+a {
+    color: rgba(255, 112, 0, 1);
+    padding-right: 5px;
+}
+
+/* Styles for booking form */
+div.filmLogo {
+    float:left;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.filmLogoImage {
+    height: 300px;
+    width: 200px;
+}
+
+div.filmDescription {
+    text-align: left;
+    padding-right: 100px;
+}
+
+div.bookingSelector {
+    clear:left;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.selectorImage {
+    height: 25px;
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.numTickets {
+    margin-right: 10px;
+}
+
+.bookingSelectorRow {
+    margin-top:15px;
+}
+
+.numTicketsSelected {
+    margin:5px;
+    font-weight: bold;
+    font-size: large;
+    width: 10px;
+    display: inline-block;
+}

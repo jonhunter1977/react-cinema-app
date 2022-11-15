@@ -1,0 +1,28 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Black Adam",
+      "synopsis": "Nearly 5,000 years after he was bestowed with the almighty powers of the ancient gods - and imprisoned just as quickly - Black Adam (Johnson) is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+      "adultPrice": 10.00,
+      "childPrice": 5.00,
+      "image": "1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Black Panther: Wakanda Forever",
+      "synopsis": "The nation of Wakanda is pitted against intervening world powers as they mourn the loss of their king T'Challa.",
+      "adultPrice": 13.00,
+      "childPrice": 3.00,
+      "image": "2.png"
+    },
+    {
+      "id": 3,
+      "title": "Lyle, Lyle, Crocodile",
+      "synopsis": "Based on the best-selling book series by Bernard Waber, Lyle, Lyle, Crocodile is a live-action / CGI musical comedy that brings this beloved character to a new, global audience.",
+      "adultPrice": 7.99,
+      "childPrice": 2.50,
+      "image": "3.jpg"
+    }
+  ]
+}
